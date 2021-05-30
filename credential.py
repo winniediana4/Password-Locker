@@ -6,4 +6,4 @@ class Credential:
    credential_list=[]
 
    def __init__(self,view_password,account,login,password):
-       pass
+       self.view_password = view_password
