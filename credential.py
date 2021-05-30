@@ -5,9 +5,9 @@ class Credential:
 
    credential_list=[]
 
-   def __init__(self,view_password,user,login,password):
+   def __init__(self,view_password,account,login,password):
        self.view_password = view_password
-       self.user = user
+       self.account = account
        self.login = login
        self.password = password
 
@@ -31,9 +31,9 @@ class Credential:
       Credential.credential_list.remove(self)
 
 
-   @classmethod
-   def find_user_name(cls,user):
-      """
-      find_user_name method returns a credential that matches the user_name
-      """
-      return cls.credential_list
+  #  @classmethod
+  #  def find_user_name(cls,account):
+  #     """
+  #     find_user_name method returns a credential that matches the user_name
+  #     """
+  #     return cls.credential_list
