@@ -9,3 +9,4 @@ class Credential:
        self.view_password = view_password
        self.account = account
        self.login = login
+       self.password = password
