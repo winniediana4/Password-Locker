@@ -50,3 +50,15 @@ class TestCredential(unittest.TestCase):
     self.new_credential.save_credential()
     test_credential = Credential("0712345678","test","login","0712345678")# new credential
     test_credential.save_credential()
+
+    self.new_credential.delete_credential()# delete a credential object
+    self.assertEqual(len(Credential.credential_list),1)
+
+  def test_display_all_credential(self):
+    """
+    test_display_all_credentials to return a list of all saved credentials
+    """
+    self.assertEqual(Credential.display_credential(),Credential.credential_list)
+
+  if __name__ =='__main__':
+      unittest.main()

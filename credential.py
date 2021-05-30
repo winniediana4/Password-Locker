@@ -31,9 +31,31 @@ class Credential:
       Credential.credential_list.remove(self)
 
 
-  #  @classmethod
-  #  def find_user_name(cls,account):
-  #     """
-  #     find_user_name method returns a credential that matches the user_name
-  #     """
-  #     return cls.credential_list
+   @classmethod
+   def find_by_account_name(cls,account):
+      """
+      Method that takes in a number and returns a credential that matches the account_name
+      Args:
+          account: Account name to search for
+      Returns:
+          Credential of account that matches the account name  
+      """
+
+      for credential in cls.credential_list:
+        if credential.account == account:
+            return credential
+
+   @classmethod                    
+   def credential_exist(cls,account):
+      """
+      Method that checks if a credential exists from the credential_list.
+      Args:
+          account: Account name to search if it exists
+      Returns :
+          Boolean: True or false dependent on if the credential exists
+      """
+
+      for credential in cls.credential_list:
+        if credential.account == account:
+            return True
+
