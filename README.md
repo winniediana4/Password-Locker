@@ -6,7 +6,6 @@ Winnie Diana Anyango
 This is a python application that enables iusers to generate and store passwords for various accounts such as facebook, twitter etc.The app runs on the terminal and uses short codes to navigate through it.
 ### Prerequisites
 1. python3.9 is needed
-`$ sudo apt install git-all`
 ### Setup
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
